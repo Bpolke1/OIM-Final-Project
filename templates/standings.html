@@ -1,0 +1,97 @@
+<!-- standings.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Standings</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="champions-league-theme">
+            <h1 class="text-center mb-4">UEFA Standings</h1>
+            <table class="table table-striped">
+                <!-- Table header for UEFA Standings -->
+                <thead>
+                    <tr>
+                        <th scope="col">Standing In Group</th>
+                        <th scope="col">Points</th>
+                        <th scope="col">Played</th>
+                        <th scope="col">Wins</th>
+                        <th scope="col">Draws</th>
+                        <th scope="col">Losses</th>
+                        <th scope="col">Goal Difference</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Display data from uefateamstandings if available -->
+                    {% if uefateamstandings %}
+                        <tr>
+                            <td>{{ uefateamstandings['Standing In UEFA Group'] }}</td>
+                            <td>{{ uefateamstandings['Points'] }}</td>
+                            <td>{{ uefateamstandings['Played'] }}</td>
+                            <td>{{ uefateamstandings['Wins'] }}</td>
+                            <td>{{ uefateamstandings['Draws'] }}</td>
+                            <td>{{ uefateamstandings['Losses'] }}</td>
+                            <td>{{ uefateamstandings['Goal Diff'] }}</td>
+                        </tr>
+                    {% endif %}
+                </tbody>
+            </table>
+        </div>
+        <div class="container mt-5">
+            <div class="league-standings">
+                <h1 class="text-center mb-4">League Standings</h1>
+                <table class="table table-striped">
+                    <!-- Table header for League Standings -->
+                    <thead>
+                        <tr>
+                            <th scope="col">League Name</th>
+                            <th scope="col">Standing</th>
+                            <th scope="col">Points</th>
+                            <th scope="col">Played</th>
+                            <th scope="col">Wins</th>
+                            <th scope="col">Draws</th>
+                            <th scope="col">Losses</th>
+                            <th scope="col">Goal Difference</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Display data from uefadom if available -->
+                        {% if uefadom %}
+                            <tr>
+                                <td>{{ uefadom['League Name'] }}</td>
+                                <td>{{ uefadom['League Standings'] }}</td>
+                                <td>{{ uefadom['Points'] }}</td>
+                                <td>{{ uefadom['Played'] }}</td>
+                                <td>{{ uefadom['Wins'] }}</td>
+                                <td>{{ uefadom['Draws'] }}</td>
+                                <td>{{ uefadom['Losses'] }}</td>
+                                <td>{{ uefadom['Goal Diff'] }}</td>
+                            </tr>
+                        {% endif %}
+                        <!-- Display data from leaguedata if available -->
+                        {% if leaguedata %}
+                            <tr>
+                                <td>{{ leaguedata['League Name'] }}</td>
+                                <td>{{ leaguedata['League Standings'] }}</td>
+                                <td>{{ leaguedata['Points'] }}</td>
+                                <td>{{ leaguedata['Played'] }}</td>
+                                <td>{{ leaguedata['Wins'] }}</td>
+                                <td>{{ leaguedata['Draws'] }}</td>
+                                <td>{{ leaguedata['Losses'] }}</td>
+                                <td>{{ leaguedata['Goal Diff'] }}</td>
+                            </tr>
+                        {% endif %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+    
+    </html>

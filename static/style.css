@@ -1,0 +1,150 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+
+
+.champions-league-theme h1 {
+    font-size: 3em;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    color: #fff; 
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.champions-league-theme {
+    background-color: #1a237e;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-top: 50px;
+}
+
+.champions-league-theme h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.champions-league-theme p {
+    font-size: 1.2em;
+    margin-top: 20px;
+    color: #ddd;
+    line-height: 1.6;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #0d47a1; 
+    color: #fff; 
+}
+
+tr:nth-child(even) {
+    background-color: #e3f2fd; 
+}
+
+tr:hover {
+    background-color: #bbdefb; 
+}
+
+
+.champions-league-theme {
+    position: relative;
+    padding-bottom: 60px; /* Set bottom padding to accommodate search form */
+}
+
+.search-standings {
+    position: absolute;
+    bottom: 10px; /* Adjust as needed */
+    left: 10px; /* Adjust as needed */
+    width: calc(100% - 20px); /* Subtract padding and margins */
+    max-width: 400px; /* Limit the width */
+    margin: 0;
+}
+
+/* Additional styles to make the form elements match the theme */
+.search-standings .form-control {
+    border-radius: 0; /* Remove border radius */
+}
+
+.search-standings .btn-primary {
+    border-radius: 0; /* Remove border radius for the button */
+}
+
+.domestic-standings {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.domestic-standings h1 {
+    color: #131313;
+    text-align: center;
+    background-color: #0056b3; /* Blue color */
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
+    margin-top: 0;
+}
+
+.domestic-standings table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.domestic-standings table th {
+    background-color: #0057b3b4; /* Blue color */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.domestic-standings table td {
+    color: #a18787
+    padding: 10px;
+    text-align: center;
+}
+
+/* Styles to differentiate UEFA and Domestic Standings */
+.uefa-standings table th {
+    background-color: #f44336; /* Red color */
+}
+
+.uefa-standings table td {
+    color: #950a00; /* Red color */
+}
+
+.champions-league-theme table th,
+.champions-league-theme table td {
+    color: #aeaeae; /* Changing text color for better visibility */
+}
+
+/* Styles for Domestic Standings */
+.domestic-standings table th,
+.domestic-standings table td {
+    color: #333; /* Changing text color for better visibility */
+}
