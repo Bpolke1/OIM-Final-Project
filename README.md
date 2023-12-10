@@ -96,6 +96,8 @@ This project was developed collaboratively with roles as follows:
 
 [ChatGPT} Help with errors and debugging 
 
+[Professor Zhi] Helped us with our API fetching function
+
  
 
  
