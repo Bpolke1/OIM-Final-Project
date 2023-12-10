@@ -82,7 +82,7 @@ This project was developed collaboratively with roles as follows:
 
 - JORDAN HURD: Front-end development, HTML, and CSS. 
 
--BRANDON POLKE: API integration and JSON data handling. 
+- BRANDON POLKE: Back-end development, pythonn and API fetching. 
 
  
 
